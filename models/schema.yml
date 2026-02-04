@@ -52,4 +52,4 @@ sources:
          - name : log_cost
            description : frais logistique
          - name : ship_cost
-           description : cout du produit 
+           description : cout du produit  
