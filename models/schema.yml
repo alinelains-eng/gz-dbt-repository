@@ -39,7 +39,7 @@ sources:
           
        - name: ship
          identifier: raw_gz_ship 
-         description: cout des produit
+         description: cout des produit 
          columns:
          - name : order_id
            description : n° de commande
