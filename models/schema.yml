@@ -30,6 +30,10 @@ sources:
          columns:
            - name : product_id
              description : ref produit
+             tests:
+               - not_null
+               - unique
+                
            - name: purchase_price 
              description : prix d'achat
           
@@ -39,6 +43,10 @@ sources:
          columns:
          - name : order_id
            description : n° de commande
+           tests:
+             - not_null
+             - unique
+                         
          - name : shipping_fee
            description : frais d'expédition
          - name : log_cost
