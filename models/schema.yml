@@ -17,7 +17,7 @@ sources:
              description : date of pruchase
            - name: order_id
              description : n° de commande
-           - name : product_id
+           - name : products_id
              description : ref produit
            - name : revenue
              description : valeur du produit
@@ -28,7 +28,7 @@ sources:
          identifier: raw_gz_product
          description: identification des produits
          columns:
-           - name : product_id
+           - name : products_id
              description : ref produit
              tests:
                - not_null
