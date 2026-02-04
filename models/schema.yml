@@ -1,14 +1,11 @@
 version: 2
 
 sources:
-   - name: gz_raw_sales
+   - name: gz_raw_data
      database: project-dbt-aline
      schema: gz_raw_data
      loader: bigquery
      description: ...
-     freshness:
-       warn_after: {count: .., period: ..}
-       error_after: {count: .., period: ..}
      tables:
        - name: sales
          identifier: raw_gz_sales
