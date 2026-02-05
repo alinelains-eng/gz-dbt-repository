@@ -60,10 +60,16 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
+             tests:
+               - not_null
+               
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
+             tests:
+               - unique
+               
            - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
@@ -79,10 +85,16 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
+             tests:
+               - not_null
+               
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
+             tests:
+               - unique
+               
            - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
@@ -98,10 +110,16 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
+             tests:
+               - not_null
+               
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
+             tests:
+               - unique
+               
            - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
@@ -117,10 +135,16 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
+             tests:
+               - not_null
+               
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
+             tests:
+               - unique
+               
            - name: camPGN_name	
              description : nom de la campagne
            - name : ads_cost	
