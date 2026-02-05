@@ -41,7 +41,7 @@ sources:
          identifier: raw_gz_ship 
          description: cout des produit 
          columns:
-         - name : order_id
+         - name : orders_id
            description : n° de commande
            tests:
              - not_null
@@ -53,6 +53,7 @@ sources:
            description : frais logistique
          - name : ship_cost
            description : cout du produit  
+   
    
 
            
