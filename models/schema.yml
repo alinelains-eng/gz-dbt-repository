@@ -46,13 +46,89 @@ sources:
            tests:
              - not_null
              - unique
-                         
+             
          - name : shipping_fee
            description : frais d'expédition
          - name : log_cost
            description : frais logistique
          - name : ship_cost
            description : cout du produit  
+
+       - name: adwords
+         identifier: aw_gz_adwords
+         description: données de la campagne adwords
+         columns:
+           - name: date_date 
+             description : date de la campagne
+           - name: paid_source
+             description : nom de la campagne
+           - name: 	campaign_key	
+             description : primary key de la campagne
+           - name: camPGN_name	
+             description : nom de la campagne
+           - name : ads_cost	
+             description : cout de la campagne
+           - name : impression	
+             description : cout des impressions de la campagne
+           - name : click	
+             description : nb de click
+
+       - name: bing
+         identifier: aw_gz_bing
+         description: données de la campagne bing
+         columns:
+           - name: date_date 
+             description : date de la campagne
+           - name: paid_source
+             description : nom de la campagne
+           - name: 	campaign_key	
+             description : primary key de la campagne
+           - name: camPGN_name	
+             description : nom de la campagne
+           - name : ads_cost	
+             description : cout de la campagne
+           - name : impression	
+             description : cout des impressions de la campagne
+           - name : click	
+             description : nb de click
+
+       - name: criteo
+         identifier: aw_gz_criteo
+         description: données de la campagne criteo
+         columns:
+           - name: date_date 
+             description : date de la campagne
+           - name: paid_source
+             description : nom de la campagne
+           - name: 	campaign_key	
+             description : primary key de la campagne
+           - name: camPGN_name	
+             description : nom de la campagne
+           - name : ads_cost	
+             description : cout de la campagne
+           - name : impression	
+             description : cout des impressions de la campagne
+           - name : click	
+             description : nb de click
+
+       - name: facebook
+         identifier: aw_gz_facebook
+         description: données de la campagne facebook
+         columns:
+           - name: date_date 
+             description : date de la campagne
+           - name: paid_source
+             description : nom de la campagne
+           - name: 	campaign_key	
+             description : primary key de la campagne
+           - name: camPGN_name	
+             description : nom de la campagne
+           - name : ads_cost	
+             description : cout de la campagne
+           - name : impression	
+             description : cout des impressions de la campagne
+           - name : click	
+             description : nb de click
 
 
    
