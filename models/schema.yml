@@ -55,7 +55,7 @@ sources:
            description : cout du produit  
 
        - name: adwords
-         identifier: aw_gz_adwords
+         identifier: raw_gz_adwords
          description: données de la campagne adwords
          columns:
            - name: date_date 
@@ -74,7 +74,7 @@ sources:
              description : nb de click
 
        - name: bing
-         identifier: aw_gz_bing
+         identifier: raw_gz_bing
          description: données de la campagne bing
          columns:
            - name: date_date 
@@ -93,7 +93,7 @@ sources:
              description : nb de click
 
        - name: criteo
-         identifier: aw_gz_criteo
+         identifier: raw_gz_criteo
          description: données de la campagne criteo
          columns:
            - name: date_date 
@@ -112,7 +112,7 @@ sources:
              description : nb de click
 
        - name: facebook
-         identifier: aw_gz_facebook
+         identifier: raw_gz_facebook
          description: données de la campagne facebook
          columns:
            - name: date_date 
