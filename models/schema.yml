@@ -1,0 +1,61 @@
+version: 2
+
+sources:
+   - name: gz_raw_data
+     database: project-dbt-aline
+     schema: gz_raw_data
+     loader: bigquery
+
+
+     tables:
+       - name: sales
+         identifier: raw_gz_sales
+         description: sales of Greenweez / Nous avons une ligne par product_id trouvé dans chaque orders_id
+
+         columns:
+           - name: date_date 
+             description : date of pruchase
+           - name: order_id
+             description : n° de commande
+           - name : products_id
+             description : ref produit
+           - name : revenue
+             description : valeur du produit
+           - name : quantity
+             description : quantity de produit vendus
+
+       - name: product
+         identifier: raw_gz_product
+         description: identification des produits
+         columns:
+           - name : products_id
+             description : ref produit
+             tests:
+               - not_null
+               - unique
+                
+           - name: purchase_price 
+             description : prix d'achat
+          
+       - name: ship
+         identifier: raw_gz_ship 
+         description: cout des produit 
+         columns:
+         - name : orders_id
+           description : n° de commande
+           tests:
+             - not_null
+             - unique
+                         
+         - name : shipping_fee
+           description : frais d'expédition
+         - name : log_cost
+           description : frais logistique
+         - name : ship_cost
+           description : cout du produit  
+
+
+   
+
+           
+           
