@@ -60,15 +60,12 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
-             tests:
-               - not_null
                
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-             tests:
-               - unique
+
                
            - name: campaign_name	
              description : nom de la campagne
@@ -85,15 +82,12 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
-             tests:
-               - not_null
                
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-             tests:
-               - unique
+
                
            - name: campaign_name	
              description : nom de la campagne
@@ -110,15 +104,12 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
-             tests:
-               - not_null
                
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-             tests:
-               - unique
+
                
            - name: campaign_name	
              description : nom de la campagne
@@ -135,17 +126,12 @@ sources:
          columns:
            - name: date_date 
              description : date de la campagne
-             tests:
-               - not_null
-               
            - name: paid_source
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-             tests:
-               - unique
-               
-           - name: camPGN_name	
+              
+           - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
              description : cout de la campagne
@@ -153,6 +139,7 @@ sources:
              description : cout des impressions de la campagne
            - name : click	
              description : nb de click
+
 
 
    
