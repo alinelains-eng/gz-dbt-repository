@@ -2,14 +2,8 @@ with
 
 source as (
 
-    select 
-    date_date
-    , paid_source
-    , campaign_key
-    , camPGN_name as campaign_name
-    , cast(ads_cost as float64) as ads_cost
-    , impression
-    , click
+    select *
+    
      from {{ source('gz_raw_data', 'criteo') }}
 
 ),
@@ -17,7 +11,13 @@ source as (
 renamed as (
 
     select
-
+    date_date
+    , paid_source
+    , campaign_key
+    , camPGN_name as campaign_name
+    , cast(ads_cost as float64) as ads_cost
+    , impression
+    , click
     from source
 
 )
