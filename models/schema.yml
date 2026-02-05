@@ -64,7 +64,7 @@ sources:
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-           - name: camPGN_name	
+           - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
              description : cout de la campagne
@@ -83,7 +83,7 @@ sources:
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-           - name: camPGN_name	
+           - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
              description : cout de la campagne
@@ -102,7 +102,7 @@ sources:
              description : nom de la campagne
            - name: 	campaign_key	
              description : primary key de la campagne
-           - name: camPGN_name	
+           - name: campaign_name	
              description : nom de la campagne
            - name : ads_cost	
              description : cout de la campagne
