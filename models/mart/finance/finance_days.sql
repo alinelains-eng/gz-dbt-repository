@@ -1,5 +1,3 @@
-
-
 with operational as(
 SELECT 
 date_date 
